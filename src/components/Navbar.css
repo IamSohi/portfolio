@@ -1,0 +1,70 @@
+html,
+body {
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.navigation {
+  z-index: 2;
+  list-style: none;
+  position: fixed;
+  width: 100%;
+  left:0;
+  top:0;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  background-color: black;
+}
+
+.navItem {
+  display: block;
+  margin: 2em;
+  /* margin-top:; */
+  position: relative;
+  cursor: pointer;
+  flex-shrink: 0;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navLink {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+li a:visited{
+    color:inherit
+    }
+
+
+.outline {
+  position: absolute;
+  left: -10px;
+  right: -10px;
+  bottom: -20px;
+  top:-20px;
+  /* border-bottom: 10px solid white; */
+  border: 3px solid White;
+  border-radius: 12px;
+}

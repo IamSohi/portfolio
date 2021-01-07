@@ -1,0 +1,12 @@
+html,body{
+    width: 100vw;
+}
+#root{
+    width: inherit;
+    margin:0;
+    padding: 0;
+}
+.App{
+    width: inherit;
+
+}

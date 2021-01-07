@@ -1,0 +1,26 @@
+.projects{
+    margin-top: 7em;
+}
+.techItems{
+    list-style: none;
+    justify-content: center;
+    /* margin: 0;*/
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.techItems li{
+    border: 2px solid black;
+    margin: 0.2em;
+    padding: 0.3em;
+    border-radius: 12px;
+}
+
+.cardTile{
+    margin: 3em;
+    background-color: black;
+    border:1px solid rgb(100, 100, 100);
+    color: white;
+}
