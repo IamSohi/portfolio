@@ -6,7 +6,7 @@ export const items = [
         technology: ["React {Hooks}", "Material-UI", "JavaScript", "HTML", "CSS"],
         description: "An interactive Weather App in React that lets you have the up-to-date weather information of your favourite cities. Add as many cities as you like. It remembers all your preferences by taking advange of browser's local storage to store location and live weather information.",
         link: "https://www.github.com/IamSohi/WeatherApp-React",
-        img: "/weatherApp.jpg"
+        img: "/weatherApp.JPG"
     },
     {
         id: "b",
@@ -24,7 +24,7 @@ export const items = [
         technology: ["PHP", "SQL", "JavaScript", "AWS", "Noje.js", "Web Sockets", "HTML", "Bootstrap"],
         description: "A real-time networking website integrated with instant messaging service that helps people connects. This was an individual project developed in PHP and MySQL. Front-end is desgined using HTML, CSS, JavaScript and BootStrap. The instant-messaging service was implimented in Express.js, using websockets and Node.js.",
         link: "https://www.github.com/IamSohi/idotoday",
-        img: "/idotoday.jpg"
+        img: "/idotoday.JPG"
     },
     {
         id: "d",
