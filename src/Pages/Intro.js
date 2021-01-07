@@ -28,7 +28,7 @@ function Intro(props) {
                                     </div>
                                 </Hidden>
 
-                                <img className="profilePic chl" src="./images/profilepic.jpg" alt="Profile Pic" />
+                                <img className="profilePic chl" src={process.env.PUBLIC_URL+"/profilepic.jpg"} alt="Profile Pic" />
 
                             </div>
                         </Grid>

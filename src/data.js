@@ -6,7 +6,7 @@ export const items = [
         technology: ["React {Hooks}", "Material-UI", "JavaScript", "HTML", "CSS"],
         description: "An interactive Weather App in React that lets you have the up-to-date weather information of your favourite cities. Add as many cities as you like. It remembers all your preferences by taking advange of browser's local storage to store location and live weather information.",
         link: "https://www.github.com/IamSohi/WeatherApp-React",
-        img: "/images/weatherApp.jpg"
+        img: "/weatherApp.jpg"
     },
     {
         id: "b",
@@ -15,7 +15,7 @@ export const items = [
         technology: ["Java", "Java-FX", "MySQL", "Eclipse", "XAMPP", "SceneBuilder"],
         description: "TODS - Tiffin Order & Delivery System - is a POS system that allows the businesses to take orders, create and manage customers accounts, helps keep track of order delivery. This group project was developed in Java and MySQL in the Project Development course at KPU. We also took advantage of JavaFX Library to design Application Interfaces.",
         link: "https://www.github.com/IamSohi/TODS",
-        img: "/images/tods.jpg"
+        img: "/tods.jpg"
     },
     {
         id: "c",
@@ -24,7 +24,7 @@ export const items = [
         technology: ["PHP", "SQL", "JavaScript", "AWS", "Noje.js", "Web Sockets", "HTML", "Bootstrap"],
         description: "A real-time networking website integrated with instant messaging service that helps people connects. This was an individual project developed in PHP and MySQL. Front-end is desgined using HTML, CSS, JavaScript and BootStrap. The instant-messaging service was implimented in Express.js, using websockets and Node.js.",
         link: "https://www.github.com/IamSohi/idotoday",
-        img: "/images/idotoday.jpg"
+        img: "/idotoday.jpg"
     },
     {
         id: "d",
@@ -33,7 +33,7 @@ export const items = [
         technology: ["Java", "Android Studio", "LibGdx", "Gradle", "TexturePacker", "Graphics", "Google APIs"],
         description: "A fun and enjoyable andoid game in Java available on Google Play. Developed with LibGdx Game Engine, designed my own graphics and build from scratch in Android Studio.",
         link: "https://play.google.com/store/apps/details?id=com.sssproduction.naughtysofts.games",
-        img: "/images/easyroll.jpg"
+        img: "/easyroll.jpg"
     },
     {
         id: "e",
@@ -42,7 +42,7 @@ export const items = [
         technology: ["Python", "Jupyter Notebook", "Numpy", "Scipy", "Matplotlib"],
         description: "ML modal in deep neural networks for cat classification and implemented hyperparameters tunning, regulatization, and optimization to achieve high accuracy and performance.",
         link: "https://www.github.com/IamSohi/Cat-Classifier",
-        img: "/images/catclassifier.jpg"
+        img: "/catclassifier.jpg"
     },
     {
         id: "f",
@@ -51,7 +51,7 @@ export const items = [
         technology: ["Linux Server", "Windows 10", "Command Line"],
         description: "Managed and troubleshoot a distributed network on Linux machine. SetUp and configured Linux system for DHCP Server, DNS Server, Apache Server, File Sharing and distributed directory.",
         link: "https://www.github.com/IamSohi/Managing-a-Network-Using-Linux",
-        img: "/images/linuxnet.jpg"
+        img: "/linuxnet.jpg"
     },
 
 ];
