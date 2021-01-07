@@ -6,10 +6,10 @@
 .pnp.js
 
 # file
-/Pages/Intro(old).js
-/Pages/Projects(old).js
-App(old).js
-logo.svg
+/src/Pages/Intro(old).js
+/src/Pages/Projects(old).js
+/src/App(old).js
+/src/logo.svg
 
 # testing
 /coverage
