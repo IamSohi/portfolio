@@ -37,7 +37,7 @@ function Navbar(props) {
     const location = useLocation();
 
     let color = items[0].color;
-    items.forEach(item => (('portfolio/'+item.name.toLowerCase()) === (location.pathname.substr(1))) ? color = item.color : '');
+    items.forEach(item => ((item.name.toLowerCase()) === (location.pathname.substr(1))) ? color = item.color : '');
     const [selected, setSelected] = useState(color);
 
 
@@ -88,7 +88,7 @@ function Item({ color, navItem, navIcon, isSelected, onClick }) {
                 transition={spring}
             />
             }
-            <Link key={color + navItem} className="navLink" to={"/portfolio/" + ((navItem === "About") ? "" : navItem.toLowerCase())} style={{ color: color }}>
+            <Link key={color + navItem} className="navLink" to={"/" + ((navItem === "About") ? "" : navItem.toLowerCase())} style={{ color: color }}>
 
 
                 <Hidden smDown>

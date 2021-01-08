@@ -14,10 +14,10 @@ function App() {
       <div className="App">
         <Navbar />
         <Switch>
-          <Route exact path="/portfolio/" component={Intro} />
-          <Route path="/portfolio/projects" component={Projects} />
-          <Route path="/portfolio/education" component={Education} />
-          <Route path="/portfolio/experience" component={Experience} />
+          <Route exact path="/" component={Intro} />
+          <Route path="/projects" component={Projects} />
+          <Route path="/education" component={Education} />
+          <Route path="/experience" component={Experience} />
         </Switch>
       </div>
     </HashRouter>
