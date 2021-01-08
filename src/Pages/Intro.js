@@ -51,7 +51,7 @@ function Intro(props) {
                             <br></br>
                                 <br></br>
 
-                            Browse the <span className="textDec color2">projects</span> tab to see some of my work or feel free to <span className="textDec color3">reach out!</span>
+                            Browse the <span className="textDec color2">projects</span> tab to see some of my work or feel free to <a className="textDec color3" href="https://www.linkedin.com/in/sukhveersohi/">reach out!</a>
                             </p>
                             <Grid item xs={12}>
 
