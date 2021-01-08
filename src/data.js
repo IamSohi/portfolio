@@ -94,6 +94,17 @@ export const education = [
 export const experiences = [
     {
         id: 1,
+        title: "Web Developer (Casual)",
+        company: "High Voltage RoadShow",
+        startDate: "",
+        endDate: "",
+        description: ["Designed, modified and configured WordPress and Squarespace websites according to clients' needs.",
+            "Worked closely with the marketing and graphics team.",
+            "Experienced with WordPress Plugins and Theme packages."
+        ]
+    },
+    {
+        id: 2,
         title: "Junior Marketing Consultant",
         company: "The Acquisition Group",
         startDate: "Oct 2020",
@@ -104,7 +115,7 @@ export const experiences = [
         ]
     },
     {
-        id: 2,
+        id: 3,
         title: "Game Dealer",
         company: "Gateway Casinos",
         startDate: "Aug 2018",

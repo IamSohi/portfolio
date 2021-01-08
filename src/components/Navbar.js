@@ -35,11 +35,9 @@ function Navbar(props) {
 
 
     const location = useLocation();
-
     let color = items[0].color;
     items.forEach(item => ((item.name.toLowerCase()) === (location.pathname.substr(1))) ? color = item.color : '');
     const [selected, setSelected] = useState(color);
-
 
     return (
 
