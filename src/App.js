@@ -5,12 +5,12 @@ import Intro from './Pages/Intro';
 import Projects from './Pages/Projects';
 import Education from './Pages/Education';
 import Experience from './Pages/Experience';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { HashRouter, Switch, Route } from 'react-router-dom';
 
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="App">
         <Navbar />
         <Switch>
@@ -20,7 +20,7 @@ function App() {
           <Route path="/portfolio/experience" component={Experience} />
         </Switch>
       </div>
-    </BrowserRouter>
+    </HashRouter>
 
   );
 }

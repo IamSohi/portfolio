@@ -5,7 +5,7 @@ import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import { experiences } from "../data";
-
+import { useEffect } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 
 const color = ['#0099ff', '#ff0055', '#22cc88', '#ffaa00'];
@@ -61,6 +61,10 @@ function ExperienceTile({ title, company, description, startDate, endDate, id })
 
 function Experience() {
     const classes = useStyles();
+
+    useEffect(() => {
+        window.scrollTo(0,0);
+      });
 
     return (
         <div className={classes.experience}>

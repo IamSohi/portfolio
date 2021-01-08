@@ -1,5 +1,5 @@
 import React from 'react';
-
+import {useEffect} from 'react';
 import { items } from "../data";
 import Card from '@material-ui/core/Card';
 import CardHeader from '@material-ui/core/CardHeader';
@@ -93,6 +93,11 @@ function CardItem({ id, title, category, technology, description, link, img }) {
 
 function Projects(props) {
     const classes = useStyles();
+
+    useEffect(() => {
+        window.scrollTo(0,0);
+      });
+    
 
     return (
         <div className="projects">

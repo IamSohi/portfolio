@@ -9,6 +9,7 @@ import {education} from '../data';
 import './Education.css';
 import Button from '@material-ui/core/Button';
 import {makeStyles} from '@material-ui/core/styles';
+import { useEffect } from 'react';
 
 
 const color=['#0099ff','#ff0055','#22cc88','#ffaa00'];
@@ -75,6 +76,9 @@ function EducationCard({id, program,institution,startDate, endDate, courses, des
 // {}
 function Education(){
     const classes = useStyles();
+    useEffect(() => {
+        window.scrollTo(0,0);
+      });
 
     return(
         <div className="education">

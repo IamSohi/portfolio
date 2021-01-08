@@ -5,9 +5,11 @@ import { Button, Hidden } from '@material-ui/core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { faGithubAlt } from '@fortawesome/free-brands-svg-icons';
-
+import { useEffect } from 'react';
 function Intro(props) {
-
+    useEffect(() => {
+        window.scrollTo(0,0);
+    });
     return (
         <div className="intro">
             <Grid container>
