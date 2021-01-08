@@ -5,7 +5,7 @@ export const items = [
         title: "Weather Today",
         technology: ["React {Hooks}", "Material-UI", "JavaScript", "HTML", "CSS"],
         description: "An interactive Weather App in React that lets you have the up-to-date weather information of your favourite cities. Add as many cities as you like. It remembers all your preferences by taking advange of browser's local storage to store location and live weather information.",
-        link: "https://www.github.com/IamSohi/WeatherApp-React",
+        link: "https://iamsohi.github.io/WeatherApp-React/",
         img: "/weatherApp.JPG"
     },
     {
