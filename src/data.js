@@ -1,4 +1,27 @@
+const color = ['#0099ff', '#ff0055', '#22cc88', '#ffaa00'];
+const boldBlue = (string) => (`<strong style="color:${color[0]}">${string}</strong>`)
+const boldRed = (string) => (`<strong style="color:${color[1]}">${string}</strong>`)
+const boldGreen = (string) => (`<strong style="color:${color[2]}">${string}</strong>`)
+const boldYellow = (string) => (`<strong style="color:${color[3]}">${string}</strong>`)
 export const items = [
+    {
+        id: "g",
+        category: "Web DevOps",
+        title: "DevOps - CI/CD with AWS",
+        technology: ["AWS-Cloud", "CodePipeline", "CodeCommit", "CodeBuild", "CodeDeploy"],
+        description: "A hands-on experience with AWS solutions for CI/CD pipeline. I deployed a pre-build website to development and production environment on AWS-EC2 servers using Blue-Green deployment strategy.",
+        // link: "https://iamsohi.github.io/WeatherApp-React/",
+        img: "/aws_cicd_pipeline.png"
+    },
+    {
+        id: "h",
+        category: "Web DevOps",
+        title: "DevOps - Website Transition",
+        technology: ["Docker", "Docker-compose", "RSpec", "Capybara", "Selenium", "AWS-S3", "Terraform", "Jenkins"],
+        description: "A hands-on experience with transitioning a traditional website to a more DevOps-friendly environment using Containerization, Infrastructure as Code, and Automated deployment pipeline.",
+        // link: "https://iamsohi.github.io/WeatherApp-React/",
+        img: "/DevOps_Architecture_Diagram.JPG"
+    },
     {
         id: "a",
         category: "Web Development",
@@ -58,6 +81,16 @@ export const items = [
 
 export const education = [
     {
+        id: 4,
+        program: "Licenses & Cerifications",
+        institution: "LinkedIn Learning",
+        startDate: "",
+        endDate: "",
+        courses: ["Advanced Design Patterns: Design Principles", "Creating a Dev Environment in AWS with Terraform", "DevOps with AWS", "Docker for Developers", "Learning Selenium", "Node.js Essential Training", "Running Jenkins on AWS"],
+        description: "I enjoy taking online courses from LinkedIn learning and Coursera.org to stay relevant and up-to-date with the latest trends in the industry. Bellow are some ",
+        link: "https://www.linkedin.com/in/sukhveersohi/details/certifications/"
+    },
+    {
         id: 1,
         program: "Computer Science and Information Systems",
         institution: "Kwantlen Polytechnic University",
@@ -94,35 +127,53 @@ export const education = [
 export const experiences = [
     {
         id: 1,
-        title: "Web Developer (Casual)",
-        company: "High Voltage RoadShow",
-        startDate: "",
-        endDate: "",
-        description: ["Designed, modified and configured WordPress and Squarespace websites according to clients' needs.",
-            "Worked closely with the marketing and graphics team.",
-            "Experienced with WordPress Plugins and Theme packages."
+        title: "Web & Cloud Engineer (Contractor)",
+        company: "ezPT Technologies Ltd.",
+        companyType: "Health Tech Startup",
+        startDate: "Jan 2021",
+        endDate: "Present",
+        description: [`Built a ${boldBlue('full-stack web platform')} to better engage patients and therapists in the treatment of physical injuries through the web app and healthcare device providing ${boldBlue('real-time analytics')}`,
+        `Implemented a new ${boldBlue('containerized deployment and CI/CD strategy')} using Docker and Jenkins, ${boldBlue('reducing the production time by 96.7%')}. Also optimized resource usage by configuring a multi-container environment on a single EC2 instance using docker-compose.`,
+        `Successfully applied Kanban agile methodology and helped set up DevOps environment ${boldBlue('reducing the lead time and increasing feedback iterations')}`,
+            `Developed the front-end using React (Hooks), Material-UI, HTML5, CSS3, JavaScript ES6, and back-end using Express.js, Node.js, Django (Python), Firebase, SQL, test the application using JEST and Selenium.`
         ]
     },
     {
         id: 2,
-        title: "Junior Marketing Consultant",
-        company: "The Acquisition Group",
-        startDate: "Oct 2020",
-        endDate: "Present",
-        description: ["Encourage people at the door and over the phone to sign up for the ongoing promotions.",
-            "Assisted customers in order process and booked appointments for service installation.",
-            "Actively took participation in Mall Events."
+        title: "Full-Stack Web Developer",
+        company: "Tellext Inc.",
+        companyType: "Robotics Company",
+        startDate: "Dec 2021",
+        endDate: "May 2022",
+        description: [`Developed a WebRTC-based solution for teleoperating a Linux-based robot from the JavaScript front-end, which ${boldRed('decreased the latency by 90%')}`,
+        `Lead the transition to ${boldRed('Automated Testing')} using tools such as JEST, React testing library, and Selenium to perform various tests as a part of the CI/CD pipeline. This increased the code quality and ${boldRed('slashed release time by 58%')}</strong>`,
+        `Built a ${boldRed('secure and scalable RESTful APIs')} using AWS API gateway and lambda services that served data to the front-end based on dynamically chosen user inputs.`,
+        `Enhanced the ${boldRed('security of video streaming service')} by developing AWS lambda to issue temporary STS tokens to access the streams.`,
+        `Worked on implementing a ${boldRed('Git flow strategy')} for frontend application that enabled better code control and decreased conflicts.`
         ]
     },
     {
         id: 3,
-        title: "Game Dealer",
-        company: "Gateway Casinos",
-        startDate: "Aug 2018",
-        endDate: "Mar 2020",
-        description: ["Increased customer retention and satisfaction by establishing good customer relationships.",
-            "Improved game integrity and customer service by monitoring table game activity, recording player statistics.",
-            "Identify continual service improvement initiatives and implement these ideas in collaboration with the team and management."
+        title: "Web Developer-cum-Cabinet Designer",
+        company: "Golden Villa Inc.",
+        companyType: "Cabinets & Interior Design",
+        startDate: "Jan 2021",
+        endDate: "Oct 2021",
+        description: [`Designed and Developed a ${boldGreen('website with Wix')} for online business presence. available at <a href="https://www.goldenvilla.ca">${boldGreen('www.goldenvilla.ca')}</a>`,
+        `Boosted Google page ranking with ${boldGreen('Search Engine Optimization')} techniques`,
+            `Understood cabinetry designs from scratch in days as well as teamed up with General Manager to develop and implement the plans to better organize inventory and improve efficiency in order pickups by 200%`
         ]
-    }
+    },
+    {
+        id: 4,
+        title: "Web Developer (Casual)",
+        company: "High Voltage RoadShow",
+        companyType: "Entertainment & Event Management",
+        startDate: "",
+        endDate: "",
+        description: [`Designed, modified and configured ${boldYellow('WordPress and Squarespace websites')} according to clients' needs.`,
+            `Worked closely with the marketing and graphics team.`,
+        `Experienced with ${boldYellow('WordPress Plugins and Theme packages')}`
+        ]
+    },
 ]

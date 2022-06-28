@@ -29,25 +29,27 @@ const useStyles = makeStyles({
     }
 })
 
-function ExperienceTile({ title, company, description, startDate, endDate, id }) {
+function ExperienceTile({ title, company, companyType, description, startDate, endDate, id }) {
     const classes = useStyles();
 
     return (
         <Card className={classes.cardTile} key={id}>
             <CardHeader className={classes.textColor} classes={{ subheader: classes.subheader }}
                 title={title}
-                subheader={company}
+                subheader={`${company} [${companyType}]`}
             />
 
             <CardContent>
                 <Typography className={classes.textColor} variant="body2" color="textSecondary" component="p">
-                    {description[0]}
-                    <br></br>
-                    <br></br>
-                    {description[1]}
-                    <br></br>
-                    <br></br>
-                    {description[2]}
+                    {description.map(item => {
+                        return (
+                            <>
+                                <div dangerouslySetInnerHTML={{ __html: item }}></div>
+                                <br></br>
+                                <br></br>
+                            </>
+                        )
+                    })}
                 </Typography>
                 <br></br>
                 <time>{startDate} — {endDate}</time>
@@ -63,8 +65,8 @@ function Experience() {
     const classes = useStyles();
 
     useEffect(() => {
-        window.scrollTo(0,0);
-      });
+        window.scrollTo(0, 0);
+    });
 
     return (
         <div className={classes.experience}>
