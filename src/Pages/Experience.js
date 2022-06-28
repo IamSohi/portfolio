@@ -26,6 +26,11 @@ const useStyles = makeStyles({
     },
     subheader: {
         color: 'white'
+    },
+    subTitle: {
+        color: 'white',
+        fontSize: '4em',
+        fontWeight: 'bold',
     }
 })
 
@@ -70,6 +75,7 @@ function Experience() {
     return (
         <div className={classes.experience}>
             <Grid container>
+                <Grid className={classes.subTitle} item sm={12}>Experiences Everyday</Grid>
                 <Grid item sm={false} md={2}></Grid>
                 <Grid item sm={12} md={8}>
                     {experiences.map(item => (
