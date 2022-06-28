@@ -1,4 +1,19 @@
-# Getting Started with Create React App
+<h1 align="center">My Portfolio</h1>
+
+This project contains the code for my portfolio website, which is hosted with Github Pages at [Portfolio](https://iamsohi.github.io/portfolio/)
+
+# Technology Stack
+    
+    React js
+    Material UI
+    Font Awesome
+    React-router-dom Library
+    
+### How to host react application with Github pages:
+  [Tutorial](https://www.c-sharpcorner.com/article/how-to-deploy-react-application-on-github-pages/)
+
+
+# Original Readme from Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
