@@ -19,8 +19,8 @@ export const items = [
         title: "DevOps - Website Transition",
         technology: ["Docker", "Docker-compose", "RSpec", "Capybara", "Selenium", "AWS-S3", "Terraform", "Jenkins"],
         description: "A hands-on experience with transitioning a traditional website to a more DevOps-friendly environment using Containerization, Infrastructure as Code, and Automated deployment pipeline.",
-        // link: "https://iamsohi.github.io/WeatherApp-React/",
-        img: "/DevOps_Architecture_Diagram.JPG"
+        link: "https://github.com/IamSohi/devops-website-transition",
+        img: "/DevOps_Architecture_Diagram.jpg"
     },
     {
         id: "a",
@@ -132,6 +132,7 @@ export const experiences = [
         companyType: "Health Tech Startup",
         startDate: "Jan 2021",
         endDate: "Present",
+        skills: ["React (Hooks)", "Material-UI", "HTML5", "CSS3", "JavaScript ES6", "Express.js", "Node.js", "Django (Python)", "Firebase", "SQL"],
         description: [`Built a ${boldBlue('full-stack web platform')} to better engage patients and therapists in the treatment of physical injuries through the web app and healthcare device providing ${boldBlue('real-time analytics')}`,
         `Implemented a new ${boldBlue('containerized deployment and CI/CD strategy')} using Docker and Jenkins, ${boldBlue('reducing the production time by 96.7%')}. Also optimized resource usage by configuring a multi-container environment on a single EC2 instance using docker-compose.`,
         `Successfully applied Kanban agile methodology and helped set up DevOps environment ${boldBlue('reducing the lead time and increasing feedback iterations')}`,
@@ -159,6 +160,7 @@ export const experiences = [
         companyType: "Cabinets & Interior Design",
         startDate: "Jan 2021",
         endDate: "Oct 2021",
+        skills: ["Wix", "Graphics", "Editing",],
         description: [`Designed and Developed a ${boldGreen('website with Wix')} for online business presence. available at <a href="https://www.goldenvilla.ca">${boldGreen('www.goldenvilla.ca')}</a>`,
         `Boosted Google page ranking with ${boldGreen('Search Engine Optimization')} techniques`,
             `Understood cabinetry designs from scratch in days as well as teamed up with General Manager to develop and implement the plans to better organize inventory and improve efficiency in order pickups by 200%`
@@ -171,6 +173,7 @@ export const experiences = [
         companyType: "Entertainment & Event Management",
         startDate: "",
         endDate: "",
+        skills: ["WordPress", "Plug-ins"],
         description: [`Designed, modified and configured ${boldYellow('WordPress and Squarespace websites')} according to clients' needs.`,
             `Worked closely with the marketing and graphics team.`,
         `Experienced with ${boldYellow('WordPress Plugins and Theme packages')}`

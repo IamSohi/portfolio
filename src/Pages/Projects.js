@@ -1,5 +1,5 @@
 import React from 'react';
-import {useEffect} from 'react';
+import { useEffect } from 'react';
 import { items } from "../data";
 import Card from '@material-ui/core/Card';
 import CardHeader from '@material-ui/core/CardHeader';
@@ -61,7 +61,7 @@ function CardItem({ id, title, category, technology, description, link, img }) {
         <Grid container className={classes.projectTile}>
             <Grid item sm={12} md={5} style={{ margin: "auto" }}>
                 <div>
-                    <img className={classes.imgbox} src={process.env.PUBLIC_URL+img} alt={title} />
+                    <img className={classes.imgbox} src={process.env.PUBLIC_URL + img} alt={title} />
                 </div>
 
             </Grid>
@@ -80,9 +80,9 @@ function CardItem({ id, title, category, technology, description, link, img }) {
                         />
                     </CardContent>
                     <CardActions style={{ display: "block" }}>
-                        <Button className={classes.textColor} aria-label="settings" href={link}>
+                        {link && <Button className={classes.textColor} aria-label="settings" href={link}>
                             View Project
-          </Button>
+                        </Button>}
                     </CardActions>
                 </Card>
             </Grid>
@@ -95,9 +95,9 @@ function Projects(props) {
     const classes = useStyles();
 
     useEffect(() => {
-        window.scrollTo(0,0);
-      });
-    
+        window.scrollTo(0, 0);
+    });
+
 
     return (
         <div className="projects">

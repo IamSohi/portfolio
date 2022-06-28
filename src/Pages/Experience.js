@@ -46,7 +46,6 @@ function ExperienceTile({ title, company, companyType, description, startDate, e
                             <>
                                 <div dangerouslySetInnerHTML={{ __html: item }}></div>
                                 <br></br>
-                                <br></br>
                             </>
                         )
                     })}
