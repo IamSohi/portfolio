@@ -40,10 +40,8 @@ function Intro(props) {
                             I'm Sukhveer, a tech-enthusiast and self-driven individual with a passion for building things.
                             <br></br>
                                 <br></br>
-                            I'm interested in anything tech — especially <span className="textDec color1">web development</span> and <span className="textDec color4">machine learning</span>. I graduated from Kwantlen Polytechnic University in May 2020.
-                            My major was Computer Science and Information Systems.
-
-                            <br></br>
+                            I'm interested in anything tech — especially <span className="textDec color1">full stack development</span> and <span className="textDec color4">AI-driven solutions</span>. 
+                            I specialize in advanced software for web applications and machine learning. Recently, I've enhanced my skills in Large Language Models (LLMs) and prompt engineering, creating tools that boost productivity and engagement. Since earning my Computer Science diploma from Kwantlen Polytechnic University, I've focused on building innovative tools that streamline workflows and improve user experiences.                            <br></br>
                                 <br></br>
                             In my free time, I love networking with people, listen to music, do some reading and sometimes enjoys cooking.
                             I have a knack for bringing technology, business, science and philosophy in every discussion.

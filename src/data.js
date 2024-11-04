@@ -5,6 +5,15 @@ const boldGreen = (string) => (`<strong style="color:${color[2]}">${string}</str
 const boldYellow = (string) => (`<strong style="color:${color[3]}">${string}</strong>`)
 export const items = [
     {
+        id: "i",
+        category: "Web & AI-Driven Systems",
+        title: "AI-Powered Collaborative Writing Platform",
+        technology: ["AWS-Cloud", "Nexj.js", "TypeScript", "LLMs", "Langchain", "MongoDB", "PostgreSQL", "github Actions"],
+        description: "a web application that allows multiple users to collaboratively write articles, stories, or documents while receiving LLM-generated suggestions for grammar, style, and content enhancement.",
+        // link: "https://iamsohi.github.io/WeatherApp-React/",
+        img: "/workInProgress.jpg"
+    },
+    {
         id: "g",
         category: "Web DevOps",
         title: "DevOps - CI/CD with AWS",
@@ -81,6 +90,26 @@ export const items = [
 
 export const education = [
     {
+        id: 6,
+        program: "ChatGPT Prompt Engineering for Developers",
+        institution: "DeepLearning.AI",
+        startDate: "",
+        endDate: "",
+        courses: ["Prompt Engineering", "GenAI Applications", "Transformers", "ChatGpt", "LLM Apps"],
+        description: "Gained a solid understanding of prompt engineering fundamentals for ChatGPT, mastering effective prompting techniques and utilizing LLMs for summarizing, inferring, transforming, and expanding text.",
+        link: "https://learn.deeplearning.ai/accomplishments/247b327d-dcd9-4f5d-95a9-8c64931bff18?usp=sharing"
+    },
+    {
+        id: 5,
+        program: "Build LLM Apps with LangChain.js",
+        institution: "DeepLearning.AI",
+        startDate: "",
+        endDate: "",
+        courses: ["AI Frameworks", "Chatbots", "RAGs", "Search and Retrieval", "LangChain.js"],
+        description: "Expanded my toolkit with LangChain.js, learning to build with LLMs and effectively orchestrate and chain modules within the framework.",
+        link: "https://learn.deeplearning.ai/accomplishments/f7a580b7-31cd-4d7b-ae74-e9da5fff0fe2?usp=sharing"
+    },
+    {
         id: 4,
         program: "Licenses & Cerifications",
         institution: "LinkedIn Learning",
@@ -126,16 +155,32 @@ export const education = [
 
 export const experiences = [
     {
+        id: 5,
+        title: "Software Engineer",
+        company: "John Deere Financial",
+        companyType: "Banking and Finance",
+        startDate: "Aug 2022",
+        endDate: "April 2024",
+        skills: ["React (Hooks)", "Material-UI", "HTML5", "CSS3", "JavaScript ES6", "Express.js", "Node.js", "Django (Python)", "Firebase", "SQL"],
+        description: [`Spearheaded the design and implementation of a ${boldGreen('YAML-driven microservice')} for automated letter generation, eliminating manual entry and boosting productivity by ${boldGreen('over 70%')} , resulting in faster processing and improved accuracy.`,
+        `${boldGreen('Achieved a 90% reduction')} in processing time from 5 hours to 30 minutes by migrating legacy batch jobs to ${boldGreen('AWS with Step Functions')}, significantly enhancing workflow efficiency through an event-driven model.`,
+        `Engineered and optimized AWS ECS microservices for ${boldGreen('large-scale data processing')}, utilizing streaming techniques for efficient handling and validation of multi-gigabyte files, ensuring performance and continuous accuracy updates.`,
+        `${boldGreen('Reduced processing time by over 80%')} by refactoring a microservice for high-volume API requests, ensuring timely data delivery and improving response times significantly.`,
+        `Architected robust APIs enabling seamless real-time access to resources for business users, boasting an exceptional ${boldGreen('success rate of 99.9%')} and effortlessly handling ${boldGreen('tens of thousands of hits')}.`
+    ]
+    },
+    {
         id: 1,
         title: "Web & Cloud Engineer (Contractor)",
         company: "ezPT Technologies Ltd.",
         companyType: "Health Tech Startup",
         startDate: "Jan 2021",
-        endDate: "Present",
+        endDate: "Nov 2022",
         skills: ["React (Hooks)", "Material-UI", "HTML5", "CSS3", "JavaScript ES6", "Express.js", "Node.js", "Django (Python)", "Firebase", "SQL"],
         description: [`Built a ${boldBlue('full-stack web platform')} to better engage patients and therapists in the treatment of physical injuries through the web app and healthcare device providing ${boldBlue('real-time analytics')}`,
         `Implemented a new ${boldBlue('containerized deployment and CI/CD strategy')} using Docker and Jenkins, ${boldBlue('reducing the production time by 96.7%')}. Also optimized resource usage by configuring a multi-container environment on a single EC2 instance using docker-compose.`,
         `Successfully applied Kanban agile methodology and helped set up DevOps environment ${boldBlue('reducing the lead time and increasing feedback iterations')}`,
+        `Transitioned authentication from Firebase to AWS Cognito to ensure ${boldBlue('HIPAA compliance')} and enhance data security while structuring the project development path and facilitating weekly meetings for effective progress and collaboration.`,
             `Developed the front-end using React (Hooks), Material-UI, HTML5, CSS3, JavaScript ES6, and back-end using Express.js, Node.js, Django (Python), Firebase, SQL, test the application using JEST and Selenium.`
         ]
     },
@@ -161,8 +206,8 @@ export const experiences = [
         startDate: "Jan 2021",
         endDate: "Oct 2021",
         skills: ["Wix", "Graphics", "Editing",],
-        description: [`Designed and Developed a ${boldGreen('website with Wix')} for online business presence. available at <a href="https://www.goldenvilla.ca">${boldGreen('www.goldenvilla.ca')}</a>`,
-        `Boosted Google page ranking with ${boldGreen('Search Engine Optimization')} techniques`,
+        description: [`Designed and Developed a ${boldYellow('website with Wix')} for online business presence. available at <a href="https://www.goldenvilla.ca">${boldYellow('www.goldenvilla.ca')}</a>`,
+        `Boosted Google page ranking with ${boldYellow('Search Engine Optimization')} techniques`,
             `Understood cabinetry designs from scratch in days as well as teamed up with General Manager to develop and implement the plans to better organize inventory and improve efficiency in order pickups by 200%`
         ]
     },
@@ -174,9 +219,9 @@ export const experiences = [
         startDate: "",
         endDate: "",
         skills: ["WordPress", "Plug-ins"],
-        description: [`Designed, modified and configured ${boldYellow('WordPress and Squarespace websites')} according to clients' needs.`,
+        description: [`Designed, modified and configured ${boldGreen('WordPress and Squarespace websites')} according to clients' needs.`,
             `Worked closely with the marketing and graphics team.`,
-        `Experienced with ${boldYellow('WordPress Plugins and Theme packages')}`
+        `Experienced with ${boldGreen('WordPress Plugins and Theme packages')}`
         ]
     },
 ]
