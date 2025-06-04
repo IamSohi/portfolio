@@ -9,9 +9,11 @@ export const items = [
         category: "Web & AI-Driven Systems",
         title: "AI-Powered Collaborative Writing Platform",
         technology: ["AWS-Cloud", "Nexj.js", "TypeScript", "LLMs", "Langchain", "MongoDB", "PostgreSQL", "github Actions"],
-        description: "a web application that allows multiple users to collaboratively write articles, stories, or documents while receiving LLM-generated suggestions for grammar, style, and content enhancement.",
-        // link: "https://iamsohi.github.io/WeatherApp-React/",
-        img: "/workInProgress.jpg"
+        description: "A deceptively simple collaborative editor powered by OpenAI APIs, enabling real-time grammar, tone, and style suggestions. While the interface is minimalist, the architecture is robust — featuring serverless deployment, AI prompt engineering, real-time collaboration, and secure authentication.",
+        github: "https://github.com/IamSohi/portfolio-projects/tree/main/apps/writing-platform",
+        link: "https://portfolio-projects-writing-platform.vercel.app",
+        img: "/collab-ai.png",
+        video: "/demovideo.mov"
     },
     {
         id: "g",
@@ -64,8 +66,10 @@ export const items = [
         title: "EasyRoll",
         technology: ["Java", "Android Studio", "LibGdx", "Gradle", "TexturePacker", "Graphics", "Google APIs"],
         description: "A fun and enjoyable andoid game in Java available on Google Play. Developed with LibGdx Game Engine, designed my own graphics and build from scratch in Android Studio.",
-        link: "https://play.google.com/store/apps/details?id=com.sssproduction.naughtysofts.games",
-        img: "/easyroll.jpg"
+        // link: "https://play.google.com/store/apps/details?id=com.sssproduction.naughtysofts.games",
+        link: "https://pt.mob4gamers.com/easy-roll-mini/com.sssproduction.naughtysofts.games.erl",
+        img: "/easyroll.jpg",
+        video: "https://drive.google.com/file/d/1OXh0jTaK8bU8VMUrXPoT9fvx3V5DuXnb/view"
     },
     {
         id: "e",
@@ -163,11 +167,14 @@ export const experiences = [
         endDate: "April 2024",
         skills: ["React (Hooks)", "Material-UI", "HTML5", "CSS3", "JavaScript ES6", "Express.js", "Node.js", "Django (Python)", "Firebase", "SQL"],
         description: [`Spearheaded the design and implementation of a ${boldGreen('YAML-driven microservice')} for automated letter generation, eliminating manual entry and boosting productivity by ${boldGreen('over 70%')} , resulting in faster processing and improved accuracy.`,
+
         `${boldGreen('Achieved a 90% reduction')} in processing time from 5 hours to 30 minutes by migrating legacy batch jobs to ${boldGreen('AWS with Step Functions')}, significantly enhancing workflow efficiency through an event-driven model.`,
         `Engineered and optimized AWS ECS microservices for ${boldGreen('large-scale data processing')}, utilizing streaming techniques for efficient handling and validation of multi-gigabyte files, ensuring performance and continuous accuracy updates.`,
         `${boldGreen('Reduced processing time by over 80%')} by refactoring a microservice for high-volume API requests, ensuring timely data delivery and improving response times significantly.`,
-        `Architected robust APIs enabling seamless real-time access to resources for business users, boasting an exceptional ${boldGreen('success rate of 99.9%')} and effortlessly handling ${boldGreen('tens of thousands of hits')}.`
-    ]
+        `Archite,cted robust APIs enabling seamless real-time access to resources for business users, boasting an exceptional ${boldGreen('success rate of 99.9%')} and effortlessly handling ${boldGreen('tens of thousands of hits')}.`
+    ],
+        technology: ["Python", "TypeScript", "Node.js", "AWS-Cloud", "DevOps", "Terraform", "Java", "Flask"],
+
     },
     {
         id: 1,
@@ -177,12 +184,16 @@ export const experiences = [
         startDate: "Jan 2021",
         endDate: "Nov 2022",
         skills: ["React (Hooks)", "Material-UI", "HTML5", "CSS3", "JavaScript ES6", "Express.js", "Node.js", "Django (Python)", "Firebase", "SQL"],
-        description: [`Built a ${boldBlue('full-stack web platform')} to better engage patients and therapists in the treatment of physical injuries through the web app and healthcare device providing ${boldBlue('real-time analytics')}`,
+        description: [
+            // `Built a ${boldBlue('full-stack web platform')} to better engage patients and therapists in the treatment of physical injuries through the web app and healthcare device providing ${boldBlue('real-time analytics')}`,
+        `${boldBlue('Secured government funding')} by building an MVP full-stack web platform that automated therapist workflows, delivered real-time analytics, and streamlined notetaking and treatment planning.`,
         `Implemented a new ${boldBlue('containerized deployment and CI/CD strategy')} using Docker and Jenkins, ${boldBlue('reducing the production time by 96.7%')}. Also optimized resource usage by configuring a multi-container environment on a single EC2 instance using docker-compose.`,
         `Successfully applied Kanban agile methodology and helped set up DevOps environment ${boldBlue('reducing the lead time and increasing feedback iterations')}`,
         `Transitioned authentication from Firebase to AWS Cognito to ensure ${boldBlue('HIPAA compliance')} and enhance data security while structuring the project development path and facilitating weekly meetings for effective progress and collaboration.`,
             `Developed the front-end using React (Hooks), Material-UI, HTML5, CSS3, JavaScript ES6, and back-end using Express.js, Node.js, Django (Python), Firebase, SQL, test the application using JEST and Selenium.`
-        ]
+        ],
+        technology: ["React", "Python", "TypeScript", "JavaScript", "Node.js", "Django", "PostgreSQL", "Auth0", "MongoDB", "AWS-Cloud"],
+        // link: "https://ezpt.ca",
     },
     {
         id: 2,
@@ -196,7 +207,9 @@ export const experiences = [
         `Built a ${boldRed('secure and scalable RESTful APIs')} using AWS API gateway and lambda services that served data to the front-end based on dynamically chosen user inputs.`,
         `Enhanced the ${boldRed('security of video streaming service')} by developing AWS lambda to issue temporary STS tokens to access the streams.`,
         `Worked on implementing a ${boldRed('Git flow strategy')} for frontend application that enabled better code control and decreased conflicts.`
-        ]
+        ],
+        technology: ["React", "Next.js", "TypeScript", "JavaScript", "Node.js", "PostgreSQL", "Serverless", "AWS-Cloud"],
+
     },
     {
         id: 3,

@@ -16,6 +16,11 @@ function Navbar(props) {
             icon: 'perm_identity'
         },
         {
+            name: 'Experience',
+            color: '#ffaa00',
+            icon: 'work'
+        },
+        {
             name: 'Projects',
             color: '#ff0055',
             icon: 'handyman'
@@ -24,12 +29,8 @@ function Navbar(props) {
             name: 'Education',
             color: '#22cc88',
             icon: 'school'
-        },
-        {
-            name: 'Experience',
-            color: '#ffaa00',
-            icon: 'work'
         }
+        
     ];
 
 

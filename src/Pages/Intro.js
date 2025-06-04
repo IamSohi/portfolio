@@ -40,16 +40,20 @@ function Intro(props) {
                             I'm Sukhveer, a tech-enthusiast and self-driven individual with a passion for building things.
                             <br></br>
                                 <br></br>
-                            I'm interested in anything tech — especially <span className="textDec color1">full stack development</span> and <span className="textDec color4">AI-driven solutions</span>. 
-                            I specialize in advanced software for web applications and machine learning. Recently, I've enhanced my skills in Large Language Models (LLMs) and prompt engineering, creating tools that boost productivity and engagement. Since earning my Computer Science diploma from Kwantlen Polytechnic University, I've focused on building innovative tools that streamline workflows and improve user experiences.                            <br></br>
-                                <br></br>
+                            I'm interested in anything tech — especially <span className="textDec color1">full stack development</span> and <span className="textDec color4">Cloud-Native solutions</span>. 
+                            At John Deere, I increased legal team productivity by 70% with scalable microservices and reduced processing time by 90% using AWS Step Functions. At ezPT, a healthcare tech startup, I led development of a full-stack platform that automated therapist workflows and <span className="textDec color3">secured government funding</span> for the company. I’ve also built real-time dashboards for robotics monitoring, implemented secure video streaming with OAuth 2.0, and <span className="textDec color2">streamlined DevOps pipelines</span> to cut release cycles by over 50%. Most recently, I’ve been leveraging Large Language Models and prompt engineering to build AI-powered tools that enhance productivity and user engagement.
+
+
+                            {/* I specialize in advanced software for web applications and machine learning. Recently, I've enhanced my skills in Large Language Models (LLMs) and prompt engineering, creating tools that boost productivity and engagement. Since earning my Computer Science diploma from Kwantlen Polytechnic University, I've focused on building innovative tools that streamline workflows and improve user experiences.                            <br></br> */}
+                            <br></br>
+                            <br></br>
                             In my free time, I love networking with people, listen to music, do some reading and sometimes enjoys cooking.
                             I have a knack for bringing technology, business, science and philosophy in every discussion.
 
                             <br></br>
                                 <br></br>
 
-                            Browse the <span className="textDec color2">projects</span> tab to see some of my work or feel free to <a className="textDec color3" href="https://www.linkedin.com/in/sukhveersohi/">reach out!</a>
+                            Browse the <span className="textDec color1">projects</span> tab to see some of my work or feel free to <a className="textDec color4" href="https://www.linkedin.com/in/sukhveersohi/">reach out!</a>
                             </p>
                             <Grid item xs={12}>
 

@@ -34,7 +34,22 @@ const useStyles = makeStyles({
     }
 })
 
-function ExperienceTile({ title, company, companyType, description, startDate, endDate, id }) {
+function TechItems({ technology }) {
+    console.log(technology);
+    return (
+        <div>
+            <ul className="techItems">
+                {
+                    technology && technology.map((items, index) => (
+                        <li key={items} style={{ color: (index < 4) ? color[index] : color[index - 4], borderColor: (index < 4) ? color[index] : color[index - 4] }}>{items}</li>
+                    )
+                )
+                }
+            </ul>
+            </div>)
+}
+
+function ExperienceTile({ title, company, companyType, description, startDate, endDate, id, technology }) {
     const classes = useStyles();
 
     return (
@@ -57,6 +72,9 @@ function ExperienceTile({ title, company, companyType, description, startDate, e
                 </Typography>
                 <br></br>
                 <time>{startDate} — {endDate}</time>
+
+                <TechItems technology={technology}
+                        />
 
             </CardContent>
 

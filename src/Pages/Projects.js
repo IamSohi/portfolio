@@ -15,6 +15,8 @@ const color = ['#0099ff', '#ff0055', '#22cc88', '#ffaa00'];
 const useStyles = makeStyles({
     imgbox: {
         width: '90%',
+        borderRadius: '12px'
+
 
     },
     cardTile: {
@@ -40,29 +42,59 @@ const useStyles = makeStyles({
     }
 })
 
+
 function TechItems({ technology }) {
     return (
         <div>
             <ul className="techItems">
                 {
                     technology.map((items, index) => (
-
-
                         <li key={items} style={{ color: (index < 4) ? color[index] : color[index - 4], borderColor: (index < 4) ? color[index] : color[index - 4] }}>{items}</li>
                     ))
                 }
             </ul></div>)
 }
 
-function CardItem({ id, title, category, technology, description, link, img }) {
+function CardItem({ id, title, category, technology, description, github, link, img, video }) {
     const classes = useStyles();
-
+    
+    const extractGoogleDriveId = (url) => {
+        const match = url.match(/\/d\/([a-zA-Z0-9_-]+)/);
+        return match?.[1] || '';
+    };
     return (
         <Grid container className={classes.projectTile}>
             <Grid item sm={12} md={5} style={{ margin: "auto" }}>
                 <div>
-                    <img className={classes.imgbox} src={process.env.PUBLIC_URL + img} alt={title} />
-                </div>
+                {video ? (
+            video.includes('drive.google.com') ? (
+                <iframe
+                    className={classes.imgbox}
+                    src={`https://drive.google.com/file/d/${extractGoogleDriveId(video)}/preview`}
+                    allow="autoplay"
+                    width="100%"
+                    height="360"
+                    frameBorder="0"
+                    allowFullScreen
+                    title={title}
+                ></iframe>
+            ) : (
+                <video
+                    className={classes.imgbox}
+                    controls
+                    src={process.env.PUBLIC_URL + video}
+                    alt={title}
+                >
+                    Your browser does not support the video tag.
+                </video>
+            )
+            ) : (
+                <img
+                    className={classes.imgbox}
+                    src={process.env.PUBLIC_URL + img}
+                    alt={title}
+                />
+            )}                </div>
 
             </Grid>
             <Grid item sm={12} md={7}>
@@ -80,6 +112,9 @@ function CardItem({ id, title, category, technology, description, link, img }) {
                         />
                     </CardContent>
                     <CardActions style={{ display: "block" }}>
+                        {github && <Button className={classes.textColor} aria-label="settings" href={github}>
+                            github
+                        </Button>}
                         {link && <Button className={classes.textColor} aria-label="settings" href={link}>
                             View Project
                         </Button>}
